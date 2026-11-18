@@ -1,5 +1,10 @@
 ## schema.org
 
+```{revealjs-section}
+:data-background-color: rgb(15, 23, 92)
+:data-background-gradient: linear-gradient(to top, rgb(244, 125, 32) 14px, transparent 14px), linear-gradient(100deg, rgb(12, 11, 61) 0%, rgb(15, 23, 92) 55%, rgb(19, 53, 120) 100%)
+```
+
 ### ¿Qué es?
 
 - TODO: iniciativa de Google, Microsoft, Yahoo y Yandex (2011)

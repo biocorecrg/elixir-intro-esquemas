@@ -1,8 +1,13 @@
 ## Esquemas de metadatos y Bioschemas
 
+```{revealjs-section}
+:data-background-color: rgb(15, 23, 92)
+:data-background-gradient: linear-gradient(to top, rgb(244, 125, 32) 14px, transparent 14px), linear-gradient(100deg, rgb(12, 11, 61) 0%, rgb(15, 23, 92) 55%, rgb(19, 53, 120) 100%)
+```
+
 **schema.org y Bioschemas para hacer recursos más FAIR**
 
-::::{container} align-right
+::::{container} portada-datos
 [Toni Hermoso Pulido](https://orcid.org/0000-0003-2016-6465)
 
 Centre for Genomic Regulation (CRG) · ELIXIR
