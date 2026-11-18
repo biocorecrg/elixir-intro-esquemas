@@ -1,0 +1,37 @@
+"@context": "https://schema.org"
+"@type": "PresentationDigitalDocument"
+"http://purl.org/dc/terms/conformsTo":
+  "@type": "CreativeWork"
+  "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+"name": "Esquemas de metadatos: schema.org y Bioschemas"
+"description": "Introducción a schema.org y Bioschemas para describir recursos de las ciencias de la vida en la web, con una práctica breve de publicación y validación de metadatos JSON-LD en GitHub Pages."
+"keywords": "schema.org, Bioschemas, metadatos, JSON-LD, FAIR"
+"author":
+  - "@type": "Person"
+    name: "Toni Hermoso Pulido"
+    "@id": "https://orcid.org/0000-0003-2016-6465"
+    url: "https://orcid.org/0000-0003-2016-6465"
+  - "@type": "Organization"
+    name: "Centre for Genomic Regulation"
+    "@id": https://ror.org/03wyzt892
+    url: https://www.crg.eu
+"about":
+  - "@type": "DefinedTerm"
+    name: "schema.org"
+    url: "https://schema.org"
+  - "@type": "DefinedTerm"
+    name: "Bioschemas"
+    url: "https://bioschemas.org"
+"isPartOf":
+  "@type": "Event"
+  name: "Taller ELIXIR-México de Recursos de Datos y Conocimiento"
+  url: "https://laboratorio-de-biologia-computacional.github.io/taller-elixir-mexico-2026/"
+  startDate: "2026-11-16"
+  endDate: "2026-11-27"
+"audience":
+  "@type": "Audience"
+  audienceType: "Investigadores y personal que mantiene recursos bioinformáticos"
+"inLanguage": "es"
+"license": "https://opensource.org/licenses/MIT"
+"educationalLevel": "Beginner"
+"dateCreated": "2026-11-24"
