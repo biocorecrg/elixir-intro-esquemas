@@ -26,8 +26,16 @@ TODO: enlace a la plantilla publicada (`/practica/`)
 ### Paso 4 · Validar
 
 - TODO: URL publicada en [validator.schema.org](https://validator.schema.org/)
-- TODO: validador de Bioschemas
+- Perfil Bioschemas: [FAIR-Checker → Inspect](https://fair-checker.france-bioinformatique.fr/inspect)
+
+### Variante · TrainingMaterial
+
+- Describe un tutorial, diapositivas o notebook
+- Plantilla `training.html` · tipo `LearningResource`
+- [Perfil TrainingMaterial 1.0-RELEASE](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE)
+- Mínimo: `@id`, `conformsTo`, `name`, `description`, `keywords`
+- [TeSS](https://tess.elixir-europe.org) cosecha este perfil de las fuentes registradas
 
 ### Extra
 
-- TODO: probar otro perfil (`ComputationalTool`, `TrainingMaterial`)
+- Probar `ComputationalTool` para un repositorio de software

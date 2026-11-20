@@ -14,9 +14,9 @@
 
 - [Schema Markup Validator](https://validator.schema.org/)
 - [Google Rich Results Test](https://search.google.com/test/rich-results)
-- TODO: validador de Bioschemas
+- [FAIR-Checker → Inspect](https://fair-checker.france-bioinformatique.fr/inspect): valida contra perfiles Bioschemas
 
 ### Cosechar
 
-- TODO: TeSS cosecha materiales de formación
+- [TeSS](https://tess.elixir-europe.org) cosecha `TrainingMaterial`, `Course`, `Event`
 - TODO: extraer JSON-LD → grafo RDF (puente con la sesión siguiente)
