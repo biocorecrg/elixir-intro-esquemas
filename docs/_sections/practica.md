@@ -28,6 +28,17 @@ TODO: enlace a la plantilla publicada (`/practica/`)
 - TODO: URL publicada en [validator.schema.org](https://validator.schema.org/)
 - Perfil Bioschemas: [FAIR-Checker → Inspect](https://fair-checker.france-bioinformatique.fr/inspect)
 
+### Paso 4 · Validar con la API
+
+```bash
+curl --get https://fair-checker.france-bioinformatique.fr/api/inspect/bioschemas_validation \
+  --data-urlencode "url=https://USUARIO.github.io/REPO/"
+```
+
+- `"method": "by_conformsto"` → tu perfil: `"conforms": true`, `errors: []`
+- `warnings` → recomendadas que faltan
+- `"method": "by_type"` (p. ej. `Person`) → perfiles *draft*, ignorar
+
 ### Variante · TrainingMaterial
 
 - Describe un tutorial, diapositivas o notebook

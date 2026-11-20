@@ -6,6 +6,19 @@
 4. Activa GitHub Pages: *Settings → Pages → Deploy from a branch → `main`*.
 5. Valida la URL publicada en [validator.schema.org](https://validator.schema.org/) y contra el perfil Bioschemas con [FAIR-Checker → Inspect](https://fair-checker.france-bioinformatique.fr/inspect).
 
+También desde la terminal, con la API de FAIR-Checker:
+
+```bash
+curl --get https://fair-checker.france-bioinformatique.fr/api/inspect/bioschemas_validation \
+  --data-urlencode "url=https://USUARIO.github.io/REPO/"
+```
+
+Cómo leer el resultado:
+
+- Fíjate en la entrada con `"method": "by_conformsto"`: es tu perfil (`ref_profile`). Debe tener `"conforms": true` y `errors` vacío.
+- `warnings`: propiedades recomendadas que faltan. Opcional mejorarlas.
+- Las entradas `"method": "by_type"` (p. ej. el `Person` del autor) se validan contra perfiles *draft* y suelen salir `"conforms": false`. Puedes ignorarlas.
+
 Solución de referencia: [`solucion.html`](solucion.html).
 
 ## Variante: TrainingMaterial
