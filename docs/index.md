@@ -10,7 +10,7 @@
 ::::{container} portada-datos
 [Toni Hermoso Pulido](https://orcid.org/0000-0003-2016-6465)
 
-Centre for Genomic Regulation (CRG) · ELIXIR
+Centre for Genomic Regulation (CRG), Barcelona · ELIXIR-ES
 
 Taller ELIXIR-México 2026 · 24 de noviembre de 2026
 ::::
