@@ -7,8 +7,9 @@
 
 ### Generar
 
-- TODO: Bioschemas generator
-- TODO: plantillas en Jekyll, MkDocs, [sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)
+- Jekyll: [guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_02/)
+- MkDocs: [guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_03/)
+- Sphinx: [sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)
 
 ### Validar
 

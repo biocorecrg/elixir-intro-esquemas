@@ -111,6 +111,7 @@ myst_enable_extensions = [
     "substitution",
 ]
 myst_enable_checkboxes = True
+suppress_warnings = ["myst.header"]
 myst_substitutions = {"data_version": "latest"}
 
 
