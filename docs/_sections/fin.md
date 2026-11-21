@@ -7,6 +7,7 @@
 
 - [schema.org](https://schema.org)
 - [Bioschemas](https://bioschemas.org)
+- [FAIR Training Handbook](https://elixir-europe-training.github.io/ELIXIR-TrP-FAIR-training-handbook/)
 - TODO: más recursos
 
 ### Participa en la comunidad
