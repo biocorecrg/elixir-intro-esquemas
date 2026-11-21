@@ -70,5 +70,19 @@ Con [FAIR-Checker](https://fair-checker.france-bioinformatique.fr/inspect):
 
 ### ¿Quién lo usa?
 
-- TODO: bio.tools, TeSS, FAIRsharing, UniProt, WorkflowHub…
-- TODO: conexión con Semana 1, Día 4 (registros de ELIXIR)
+::::{container} cols
+:::{container}
+**Publican**
+- [bio.tools](https://bio.tools): `ComputationalTool`
+- [WorkflowHub](https://workflowhub.eu): `ComputationalWorkflow`
+- [FAIRsharing](https://fairsharing.org), [InterPro](https://www.ebi.ac.uk/interpro/): `Dataset`
+:::
+:::{container}
+**Consumen**
+- [TeSS](https://tess.elixir-europe.org): cosecha cursos y materiales
+- [BMUSE](https://github.com/HW-SWeL/BMUSE): cosechador → IDPcentral
+- [FAIR-Checker](https://fair-checker.france-bioinformatique.fr): evaluación FAIR
+:::
+::::
+
+Los mismos registros de la **Semana 1, Día 4**
