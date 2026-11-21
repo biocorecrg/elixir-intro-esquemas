@@ -78,3 +78,18 @@ print(g.serialize(format="turtle"))
 ```
 :::
 - Sin `@id`, el recurso queda como nodo en blanco `[]` y no se puede enlazar
+
+### Por debajo: SHACL
+[SHACL](https://www.w3.org/TR/shacl/) (W3C) describe qué debe cumplir un grafo RDF:
+
+```turtle
+[] a sh:NodeShape ;
+   sh:targetClass schema:Dataset ;
+   sh:property [
+       sh:path schema:name ;
+       sh:minCount 1 ;
+       sh:severity sh:Violation ] .
+```
+
+- FAIR-Checker genera estas reglas desde cada perfil: mínima → `sh:Violation` (**error**), recomendada → `sh:Warning` (**aviso**)
+- SPARQL consulta el grafo; SHACL lo valida

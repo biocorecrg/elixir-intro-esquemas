@@ -59,6 +59,7 @@ Declara qué perfil (y versión) sigue el recurso:
 ### Estados y validación
 Con [FAIR-Checker](https://fair-checker.france-bioinformatique.fr/inspect):
 - Con `conformsTo`: se valida contra **esa versión**; faltan mínimas → **errores**, faltan recomendadas → **avisos**
+- Por debajo convierte el perfil en reglas [SHACL](https://www.w3.org/TR/shacl/) y valida el grafo RDF
 - Avisa si el perfil está *deprecated* y cuál es la última versión
 - Sin `conformsTo`: se adivina por el tipo y se valida contra la última *release*
 
