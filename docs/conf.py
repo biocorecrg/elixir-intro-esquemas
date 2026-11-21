@@ -27,7 +27,7 @@ language = "es"
 # -- Matomo configuration ---------------------------------------------------
 
 matomo_url = "//stats.biocore.crg.eu/"
-matomo_site_id = "24"  # TODO: confirmar/crear site id para esta presentación
+matomo_site_id = "24"
 
 html_context = {
     "matomo_url": matomo_url,

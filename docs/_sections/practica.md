@@ -51,4 +51,5 @@ curl --get https://fair-checker.france-bioinformatique.fr/api/inspect/bioschemas
 
 ### Extra
 
+- Añadir a `keywords` un término de EDAM o GO como `DefinedTerm` (búscalo en [OLS](https://www.ebi.ac.uk/ols4/))
 - Probar `ComputationalTool` para un repositorio de software

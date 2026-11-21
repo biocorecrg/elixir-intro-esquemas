@@ -30,6 +30,24 @@ Recomendado por ELIXIR, el [ERC](https://erc.europa.eu/sites/default/files/docum
 - El [perfil `Dataset`](https://bioschemas.org/profiles/Dataset/): **5 mínimas** + **8 recomendadas**
 - Con las mínimas ya aparece en [Google Dataset Search](https://datasetsearch.research.google.com/)
 
+### Términos de ontologías
+`DefinedTerm` con la IRI del término como `@id`:
+
+:::{container} small-code
+```json
+"keywords": [{
+  "@type": "DefinedTerm",
+  "@id": "http://edamontology.org/topic_0091",
+  "name": "Bioinformatics",
+  "termCode": "topic_0091",
+  "inDefinedTermSet": "http://edamontology.org"
+}]
+```
+:::
+- `Dataset` → `keywords` · `TrainingMaterial` → `about`, `keywords`
+- `ComputationalTool` → `applicationSubCategory` (EDAM Topic), `featureList` (EDAM Operation)
+- Buscar términos: [OLS](https://www.ebi.ac.uk/ols4/), [BioPortal](https://bioportal.bioontology.org/)
+
 ### `conformsTo`
 Declara qué perfil (y versión) sigue el recurso:
 

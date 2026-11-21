@@ -34,4 +34,23 @@ Este perfil es el que [TeSS](https://tess.elixir-europe.org) (portal de formaci�
 
 Solución de referencia: [`training-solucion.html`](training-solucion.html).
 
-**Extra:** prueba `ComputationalTool` para un repositorio de software.
+## Extra
+
+- Añade a `keywords` un término de una ontología como `DefinedTerm`. Busca el término en [OLS](https://www.ebi.ac.uk/ols4/): [EDAM](https://www.ebi.ac.uk/ols4/ontologies/edam) para el tema (p. ej. *Bioinformatics*) o [Gene Ontology](https://www.ebi.ac.uk/ols4/ontologies/go) para el contenido biológico.
+
+  ```json
+  "keywords": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_0091",
+      "name": "Bioinformatics",
+      "termCode": "topic_0091",
+      "inDefinedTermSet": "http://edamontology.org"
+    },
+    "FAIR"
+  ]
+  ```
+
+  Usa siempre la IRI del término como `@id`. En FAIR-Checker, la entrada `by_type` del `DefinedTerm` (perfil *draft*) puede salir `"conforms": false`; puedes ignorarla.
+
+- Prueba `ComputationalTool` para un repositorio de software.
