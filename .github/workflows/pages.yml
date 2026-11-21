@@ -17,11 +17,8 @@ permissions:
       id-token: write
 
 jobs:
-  pages:
+  build:
     runs-on: ubuntu-24.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -104,6 +101,16 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: "site"
+
+  # Separate job: deploy-pages may not find an artifact uploaded in the same job
+  # (https://github.com/actions/deploy-pages/issues/451)
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
