@@ -6,17 +6,21 @@
 ```
 
 ### ¿Por qué?
-
-- TODO: las personas leen HTML; las máquinas necesitan estructura
-- TODO: buscadores, catálogos, agregadores, IA
+- Una persona lee «MiBaseDB, de Ana Pérez, licencia CC BY» y entiende qué es cada cosa
+- Un programa solo ve texto: no sabe qué es el nombre, quién la autora, cuál la licencia
+- Los metadatos estructurados lo declaran en la misma página
+- Los leen buscadores, catálogos y evaluadores FAIR
 
 ### FAIR
+Ya visto en la Semana 1: diagnóstico FAIR (día 2), FAIR-Checker (día 3), registros (día 4).
 
-- TODO: F4 — los (meta)datos se registran o indexan en un recurso buscable
-- TODO: I2 — vocabularios que siguen principios FAIR
+- **F4**: los (meta)datos se registran o indexan en un recurso donde se pueda buscar
+  - Con el marcado, la página se indexa sin rellenar formularios
+- **I2**: los (meta)datos usan vocabularios que siguen FAIR
+  - schema.org y Bioschemas son vocabularios abiertos y versionados
 
 ### Dónde encaja hoy
-
-- Antes: metadatos y ontologías
-- Ahora: esquemas de metadatos en la web
-- Después: RDF y SPARQL — TODO: JSON-LD *es* RDF
+- **Antes**: tipos de metadatos, ciclo de vida de los datos, ontologías
+- **Ahora**: esquemas de metadatos en la web
+- **Después**: grafo con RDF y consultas SPARQL
+  - El JSON-LD de hoy ya es RDF

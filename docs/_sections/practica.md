@@ -7,25 +7,27 @@
 
 **Publica una página con metadatos Bioschemas en GitHub Pages**
 
-TODO: enlace a la plantilla publicada (`/practica/`)
+Plantillas e instrucciones: [biocorecrg.github.io/elixir-intro-esquemas/practica/](https://biocorecrg.github.io/elixir-intro-esquemas/practica/)
 
 ### Paso 1 · Crear repositorio
 
-- TODO: nuevo repositorio público en GitHub
-- TODO: subir `index.html` de la plantilla
+- Crea un repositorio **público** nuevo en GitHub
+- Descarga [`index.html`](https://biocorecrg.github.io/elixir-intro-esquemas/practica/index.html) y súbelo: *Add file → Upload files*
 
 ### Paso 2 · Completar JSON-LD
 
-- TODO: rellenar el bloque `<script type="application/ld+json">`
-- TODO: perfil Bioschemas `Dataset`
+- Edita `index.html` en GitHub y completa el bloque `<script type="application/ld+json">`
+- Sigue el [perfil `Dataset` 1.0-RELEASE](https://bioschemas.org/profiles/Dataset/1.0-RELEASE)
+- Mínimo: `@id`, `conformsTo`, `name`, `description`, `identifier`, `keywords`, `license`, `url`
 
 ### Paso 3 · Publicar
 
-- TODO: Settings → Pages → rama `main`
+- *Settings → Pages → Deploy from a branch* → rama `main`, carpeta `/ (root)`
+- En uno o dos minutos: `https://USUARIO.github.io/REPO/`
 
 ### Paso 4 · Validar
 
-- TODO: URL publicada en [validator.schema.org](https://validator.schema.org/)
+- schema.org: pega la URL publicada en [validator.schema.org](https://validator.schema.org/)
 - Perfil Bioschemas: [FAIR-Checker → Inspect](https://fair-checker.france-bioinformatique.fr/inspect)
 
 ### Paso 4 · Validar con la API
@@ -45,7 +47,7 @@ curl --get https://fair-checker.france-bioinformatique.fr/api/inspect/bioschemas
 - Plantilla `training.html` · tipo `LearningResource`
 - [Perfil TrainingMaterial 1.0-RELEASE](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE)
 - Mínimo: `@id`, `conformsTo`, `name`, `description`, `keywords`
-- [TeSS](https://tess.elixir-europe.org) cosecha este perfil de las fuentes registradas
+- [TeSS](https://tess.elixir-europe.org) recolecta este perfil de las fuentes registradas
 
 ### Extra
 

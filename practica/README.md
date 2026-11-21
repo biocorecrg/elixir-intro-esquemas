@@ -30,7 +30,7 @@ Describe un material de formación (tutorial, diapositivas, notebook) en lugar d
    Mínimo: `@id`, `conformsTo`, `name`, `description`, `keywords`.
 3. Publica y valida igual que arriba.
 
-Este perfil es el que [TeSS](https://tess.elixir-europe.org) (portal de formación de ELIXIR) cosecha de los sitios registrados como fuente.
+Este perfil es el que [TeSS](https://tess.elixir-europe.org) (portal de formación de ELIXIR) recolecta de los sitios registrados como fuente.
 
 Solución de referencia: [`training-solucion.html`](training-solucion.html).
 

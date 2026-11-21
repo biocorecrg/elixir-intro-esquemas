@@ -21,8 +21,12 @@
 
 ### Tipos y propiedades
 
-- TODO: jerarquía de tipos (`Thing` → `CreativeWork` → `Dataset`)
-- TODO: propiedades y valores esperados
+- **Tipos** en jerarquía: [`Thing`](https://schema.org/Thing) → [`CreativeWork`](https://schema.org/CreativeWork) → [`Dataset`](https://schema.org/Dataset)
+- Cada tipo hereda las propiedades de sus padres: `name` viene de `Thing`, `creator` de `CreativeWork`
+- Cada **propiedad** indica qué valores espera:
+  - `creator`: `Person` u `Organization`
+  - `license`: `CreativeWork` o `URL`
+  - `keywords`: `Text`, `DefinedTerm` o `URL`
 
 ### Formatos
 
@@ -75,13 +79,17 @@ Atributos dentro del HTML visible (`vocab`, `typeof`, `property`):
 ```
 
 ### Ejemplo: `Dataset`
+Cada propiedad con el tipo de valor que espera:
 
 ```json
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "TODO",
-  "description": "TODO"
+  "name": "MiBaseDB",
+  "description": "Base de datos de ejemplo",
+  "creator": { "@type": "Person", "name": "Ana Pérez" },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": ["bioinformática", "FAIR"]
 }
 ```
 

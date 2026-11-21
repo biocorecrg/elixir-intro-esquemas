@@ -17,7 +17,30 @@
 - [Google Rich Results Test](https://search.google.com/test/rich-results)
 - [FAIR-Checker → Inspect](https://fair-checker.france-bioinformatique.fr/inspect): valida contra perfiles Bioschemas
 
-### Cosechar
+### Recolectar
 
-- [TeSS](https://tess.elixir-europe.org) cosecha `TrainingMaterial`, `Course`, `Event`
-- TODO: extraer JSON-LD → grafo RDF (puente con la sesión siguiente)
+- [TeSS](https://tess.elixir-europe.org) recolecta `TrainingMaterial`, `Course`, `Event`
+- [BMUSE](https://github.com/HW-SWeL/BMUSE): recolector de Bioschemas que genera RDF
+- El JSON-LD ya es RDF: se puede cargar en un grafo (siguiente sesión)
+
+### Del JSON-LD al grafo
+:::{container} small-code
+```python
+import json, extruct, rdflib, requests
+
+html = requests.get("https://USUARIO.github.io/REPO/").text
+jsonld = extruct.extract(html, syntaxes=["json-ld"])["json-ld"]
+g = rdflib.Graph().parse(data=json.dumps(jsonld), format="json-ld")
+print(g.serialize(format="turtle"))
+```
+
+```turtle
+# extracto
+<https://example.org/mibasedb> a schema:Dataset ;
+    dcterms:conformsTo
+        <https://bioschemas.org/profiles/Dataset/1.0-RELEASE> ;
+    schema:name "MiBaseDB" ;
+    schema:license "https://creativecommons.org/licenses/by/4.0/" .
+```
+:::
+- Sin `@id`, el recurso queda como nodo en blanco `[]` y no se puede enlazar

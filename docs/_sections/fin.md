@@ -8,7 +8,10 @@
 - [schema.org](https://schema.org)
 - [Bioschemas](https://bioschemas.org)
 - [FAIR Training Handbook](https://elixir-europe-training.github.io/ELIXIR-TrP-FAIR-training-handbook/)
-- TODO: más recursos
+- [Tutoriales de Bioschemas](https://bioschemas.org/tutorials/)
+- [Guía ELIXIR de Bioschemas para materiales de formación](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/) (HTML, Jekyll, MkDocs, WordPress)
+- [RDMkit · Machine actionability](https://rdmkit.elixir-europe.org/machine_actionability)
+- [Principios FAIR](https://www.go-fair.org/fair-principles/) (GO FAIR)
 
 ### Participa en la comunidad
 Bioschemas es una comunidad abierta: cualquier persona u organización puede contribuir.
@@ -23,6 +26,6 @@ Bioschemas es una comunidad abierta: cualquier persona u organización puede con
 También lleva metadatos schema.org incrustados.
 
 - Hecha con [Sphinx](https://www.sphinx-doc.org) + [sphinx-revealjs](https://github.com/attakei/sphinx-revealjs) + [sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)
-- TODO: enlace al repositorio
+- Código y práctica: [github.com/biocorecrg/elixir-intro-esquemas](https://github.com/biocorecrg/elixir-intro-esquemas)
 
 # ¡Gracias!
