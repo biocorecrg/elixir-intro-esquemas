@@ -23,13 +23,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # fetch full history so tags and all refs are available
           fetch-depth: 0
           # optionally ensure tags are fetched (fetch-depth: 0 should already include tags)
           fetch-tags: true
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Prepare site directory and list tags
@@ -101,9 +101,9 @@ jobs:
         run: cp docs/index.html site/index.html
       - name: Copy hands-on material
         run: cp -r practica site/practica
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: "site"
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
