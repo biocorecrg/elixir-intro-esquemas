@@ -19,8 +19,10 @@ Ya visto en la Semana 1: diagnóstico FAIR (día 2), FAIR-Checker (día 3), regi
 - **I2**: los (meta)datos usan vocabularios que siguen FAIR
   - schema.org y Bioschemas son vocabularios abiertos y versionados
 
-### Dónde encaja hoy
-- **Antes**: tipos de metadatos, ciclo de vida de los datos, ontologías
-- **Ahora**: esquemas de metadatos en la web
-- **Después**: grafo con RDF y consultas SPARQL
-  - El JSON-LD de hoy ya es RDF
+### Esta sesión en el programa de hoy
+Semana 2 · Día 2 (martes 24): *Metadatos, ontologías y grafos de conocimiento*
+
+- **Antes**: tipos de metadatos, ciclo de vida de los datos, ontologías y anotación con ontologías
+- **Ahora** (11:30): esquemas de metadatos en la web y Bioschemas
+- **Después**: construir un grafo con RDF (12:30) y explorarlo con SPARQL (15:00)
+  - El JSON-LD de esta sesión ya es RDF

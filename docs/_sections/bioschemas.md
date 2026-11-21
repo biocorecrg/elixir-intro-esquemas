@@ -80,9 +80,7 @@ Con [FAIR-Checker](https://fair-checker.france-bioinformatique.fr/inspect):
 :::{container}
 **Consumen**
 - [TeSS](https://tess.elixir-europe.org): recolecta cursos y materiales
-- [BMUSE](https://github.com/HW-SWeL/BMUSE): recolector → IDPcentral
 - [FAIR-Checker](https://fair-checker.france-bioinformatique.fr): evaluación FAIR
 :::
 ::::
 
-Los mismos registros de la **Semana 1, Día 4**

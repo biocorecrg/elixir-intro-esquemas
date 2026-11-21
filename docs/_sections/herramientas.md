@@ -7,9 +7,44 @@
 
 ### Generar
 
-- Jekyll: [guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_02/)
-- MkDocs: [guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_03/)
-- Sphinx: [sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)
+Los tres generan el JSON-LD a partir de YAML:
+
+- **Jekyll** ([guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_02/)): clave `bioschemas:` en la cabecera YAML de la página
+- **MkDocs** ([guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_03/)): `_data/metadata.yml` con `addbioschemas`
+- **Sphinx** ([sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)): `bioschemas = ["schemaorg.yaml"]` en `conf.py`, como esta presentación
+
+### Generar desde YAML
+Se escribe YAML (más cómodo) y se genera JSON-LD:
+
+::::{container} cols ajustar
+:::{container}
+```yaml
+"@context": https://schema.org
+"@type": Dataset
+name: MiBaseDB
+keywords:
+  - bioinformática
+  - FAIR
+creator:
+  "@type": Person
+  name: Ana Pérez
+```
+:::
+:::{container}
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "MiBaseDB",
+  "keywords": ["bioinformática", "FAIR"],
+  "creator": {
+    "@type": "Person",
+    "name": "Ana Pérez"
+  }
+}
+```
+:::
+::::
 
 ### Validar
 
@@ -20,7 +55,6 @@
 ### Recolectar
 
 - [TeSS](https://tess.elixir-europe.org) recolecta `TrainingMaterial`, `Course`, `Event`
-- [BMUSE](https://github.com/HW-SWeL/BMUSE): recolector de Bioschemas que genera RDF
 - El JSON-LD ya es RDF: se puede cargar en un grafo (siguiente sesión)
 
 ### Del JSON-LD al grafo
