@@ -25,7 +25,7 @@ Bioschemas es una comunidad abierta: cualquier persona u organización puede con
 
 También lleva metadatos schema.org incrustados.
 
-- Hecha con [Sphinx](https://www.sphinx-doc.org) + [sphinx-revealjs](https://github.com/attakei/sphinx-revealjs) + [sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)
+- Hecha con [Sphinx](https://www.sphinx-doc.org) + [sphinx-revealjs](https://github.com/attakei/sphinx-revealjs) + [sphinx-bioschemas](https://biocorecrg.github.io/sphinx-bioschemas/)
 - Código y práctica: [github.com/biocorecrg/elixir-intro-esquemas](https://github.com/biocorecrg/elixir-intro-esquemas)
 
 # ¡Gracias!

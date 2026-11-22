@@ -54,3 +54,10 @@ Solución de referencia: [`training-solucion.html`](training-solucion.html).
   Usa siempre la IRI del término como `@id`. En FAIR-Checker, la entrada `by_type` del `DefinedTerm` (perfil *draft*) puede salir `"conforms": false`; puedes ignorarla.
 
 - Prueba `ComputationalTool` para un repositorio de software.
+
+- Escribe los metadatos en YAML en lugar de JSON-LD con [`index-yaml.html`](index-yaml.html). Como GitHub Pages pasa la página por Jekyll al publicar, `{{ page.bioschemas | jsonify }}` convierte la cabecera YAML en JSON-LD.
+  - Las claves con `@` van entre comillas (`"@type"`).
+  - Solo funciona en la página publicada. En local verás `{{ … }}` tal cual.
+  - Comprueba que el JSON-LD generado aparece con *Ver código fuente* en la URL publicada.
+
+  Es un atajo para la práctica. En un sitio real, el tema o un plugin del generador inserta el JSON-LD: [Jekyll](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_02/), [MkDocs](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_03/) o [Sphinx](https://biocorecrg.github.io/sphinx-bioschemas/).

@@ -11,7 +11,7 @@ Los tres generan el JSON-LD a partir de YAML:
 
 - **Jekyll** ([guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_02/)): clave `bioschemas:` en la cabecera YAML de la página
 - **MkDocs** ([guía ELIXIR](https://elixir-europe-training.github.io/ELIXIR-TrP-Bioschemas/chapters/chapter_03/)): `_data/metadata.yml` con `addbioschemas`
-- **Sphinx** ([sphinx-bioschemas](https://pypi.org/project/sphinx-bioschemas/)): `bioschemas = ["schemaorg.yaml"]` en `conf.py`, como esta presentación
+- **Sphinx** ([sphinx-bioschemas](https://biocorecrg.github.io/sphinx-bioschemas/)): `bioschemas = ["schemaorg.yaml"]` en `conf.py`, como esta presentación
 
 ### Generar desde YAML
 Se escribe YAML (más cómodo) y se genera JSON-LD:

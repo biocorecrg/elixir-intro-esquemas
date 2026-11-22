@@ -1,0 +1,21 @@
+---
+# Metadatos en YAML: Jekyll (GitHub Pages) los convierte a JSON-LD al publicar.
+# TODO: completa siguiendo el perfil Bioschemas Dataset
+#       https://bioschemas.org/profiles/Dataset
+bioschemas:
+  "@context": https://schema.org
+  "@type": Dataset
+  name: MiBaseDB
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>MiBaseDB · Base de datos de ejemplo</title>
+  <script type="application/ld+json">{{ page.bioschemas | jsonify }}</script>
+</head>
+<body>
+  <h1>MiBaseDB</h1>
+  <p>Base de datos ficticia de ejemplo para la práctica del Taller ELIXIR-México 2026.</p>
+</body>
+</html>
