@@ -95,6 +95,5 @@ Cada propiedad con el tipo de valor que espera:
 
 ### ¿Quién lee el marcado?
 - **Google**: [Dataset Search](https://datasetsearch.research.google.com/) e informe en Search Console
-  - En 2025 dejó de mostrar *Course Info*
 - **Bing** · [**Web Data Commons**](https://webdatacommons.org/structureddata/schemaorg/) (Common Crawl)
 - Otras disciplinas: [*Science on Schema.org*](https://github.com/ESIPFed/science-on-schema.org)
