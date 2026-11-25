@@ -24,11 +24,13 @@
     name: "Bioschemas"
     url: "https://bioschemas.org"
 "isPartOf":
-  "@type": "Event"
+  "@type": "Course"
   name: "Taller ELIXIR-México de Recursos de Datos y Conocimiento"
   url: "https://laboratorio-de-biologia-computacional.github.io/taller-elixir-mexico-2026/"
-  startDate: "2026-11-16"
-  endDate: "2026-11-27"
+  "hasCourseInstance":
+    "@type": "CourseInstance"
+    startDate: "2026-11-16"
+    endDate: "2026-11-27"
 "audience":
   "@type": "Audience"
   audienceType: "Investigadores y personal que mantiene recursos bioinformáticos"
